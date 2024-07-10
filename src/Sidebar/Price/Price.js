@@ -13,6 +13,7 @@ const Price = ({ handleChange }) => {
             type="radio"
             value=""
             name="newPrice"
+            defaultChecked
           />
           <span className="checkmark"></span>All
         </label>

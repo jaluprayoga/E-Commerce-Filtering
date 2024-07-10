@@ -13,6 +13,7 @@ function Category({ handleChange }) {
             type="radio"
             value=""
             name="category"
+            defaultChecked
           />
           <span className="checkmark"></span>All
         </label>
