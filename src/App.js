@@ -35,6 +35,7 @@ function App() {
     } else {
       const removeKey = (key, { [key]: _, ...rest }) => rest;
       const updateSelectedCategory = removeKey(name, selectedCategory);
+      // const updateSelectedCategory = delete selectedCategory[name];
       setSelectedCategory(updateSelectedCategory);
     }
   };
