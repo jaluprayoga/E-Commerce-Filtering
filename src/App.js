@@ -33,9 +33,11 @@ function App() {
         [name]: value,
       });
     } else {
+      // console.log("before: ", selectedCategory);
+      // const updateSelectedCategory = delete selectedCategory[name];
+      // console.log("after: ", selectedCategory);
       const removeKey = (key, { [key]: _, ...rest }) => rest;
       const updateSelectedCategory = removeKey(name, selectedCategory);
-      // const updateSelectedCategory = delete selectedCategory[name];
       setSelectedCategory(updateSelectedCategory);
     }
   };
