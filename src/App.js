@@ -24,7 +24,7 @@ function App() {
     return filtered;
   });
 
-  // ----------- Radio Filtering -----------
+  // ----------- Radio and Recommended Buttons Filtering -----------
   const handleChange = (event) => {
     const { name, value } = event.target;
     if (value !== "") {
@@ -45,12 +45,12 @@ function App() {
   function filteredData(products, selectedCategory, searchInputValue) {
     let filteredProducts = products;
 
-    // Filtering SearchInput Items
+    // Applying filter via SearchInput Items
     if (searchInputValue) {
       filteredProducts = filteredItems;
     }
 
-    // Applying selected filter
+    // Applying filter via Radio and Recommended Buttons
     if (selectedCategory) {
       const filterConditions = selectedCategory;
       filteredProducts = filteredProducts.filter((product) =>
